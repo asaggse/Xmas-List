@@ -46,5 +46,11 @@ function addGift(name, price, gift) {
 }
 
 function calculateTotal() {
-    
+    let total = 0;
+
+    for (let i = 0; i < gifts.length; i++) {
+        total += gifts[i].price;
+    }
+
+    totalSlot.innerText = formatAmount(total);
 }    
