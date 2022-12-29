@@ -74,3 +74,7 @@ function formatAmount(amount) {
     // Return the value of 'amount' formatted to two decimal places, followed by the euro symbol
     return amount.toFixed(2) + '€';
 }
+
+function renderList() {
+    
+}
