@@ -118,6 +118,7 @@ main {
    display: flex;
    flex-wrap: wrap;
    row-gap: 8px;
+   justify-content: space-between;
 }
 
 input {
@@ -129,7 +130,8 @@ input {
 }
 
 #name-field {
-   width: 70%;
+   width: calc(70% - 8px);
+
 }
 
 #price-field {
