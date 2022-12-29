@@ -84,6 +84,7 @@ function renderList() {
     for (let i = 0; i < gifts.length; i++) {
         // Call the createListElement function, passing in the index of the current gift, and store the result in a variable
         const giftElement = createListElement(i);
+
         // Add the gift element to the inner HTML of the gifts list element
         giftsListElement.innerHTML += giftElement;
     }
@@ -97,7 +98,7 @@ function createListElement(i) {
     // Get the gift at the specified index in the 'gifts' array
     const gift = gifts[i];
 
-    // Return a string containing the HTML for a list element for the gift
+    // Return a string containing the HTML for a list element for the present
     return `
     <li class="gift">
         <div class="gift-info">
