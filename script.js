@@ -7,7 +7,7 @@ const giftsListElement = document.querySelector('.gifts-list');
 const form = document.querySelector('#gift-form');
 const nameField = document.querySelector('#name-field');
 const priceField = document.querySelector('#price-field');
-const giftField = document.querySelector('#gift-field');
+const presentField = document.querySelector('#present-field');
 
 // Initialize an empty array to store the gifts
 let gifts = [];
@@ -21,10 +21,10 @@ form.addEventListener('submit', function (event) {
     // Get the values of the name, price, and gift fields, and store them in variables
     const name = nameField.value.trim();
     const price = priceField.value.trim();
-    const gift = giftField.value.trim();
+    const present = presentField.value.trim();
 
     // Call the addGift function, passing in the values of the name, price, and gift fields
-    addGift(name, price, gift);
+    addGift(name, price, present);
 
     // Reset the form fields and focus on the name field
     form.reset();
@@ -33,12 +33,12 @@ form.addEventListener('submit', function (event) {
 
 // FUNCTIONS
 // Define a function called addGift
-function addGift(name, price, gift) {
+function addGift(name, price, present) {
     // Create a new object called 'newGift' with the properties 'name', 'price', and 'gift'
     const newGift = {
         name,
         price: Number(price),   // Convert the value of 'price' to a number
-        gift
+        present
     };
 
     // Add the new gift to the 'gifts' array
@@ -92,14 +92,17 @@ function renderList() {
     setDeleteButtons();
 }
 
+// Define a function called createListElement
 function createListElement(i) {
+    // Get the gift at the specified index in the 'gifts' array
     const gift = gifts[i];
 
+    // Return a string containing the HTML for a list element for the gift
     return `
     <li class="gift">
         <div class="gift-info">
             <h3>${gift.name}</h3>
-            <p>${gift.gift}</p>
+            <p>${gift.present}</p>
         </div>
         <div class="gift-price">${formatAmount(gift.price)}</div>
         <button class="gift-button" data-index="${i}>❌</button>
