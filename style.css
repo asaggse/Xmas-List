@@ -38,6 +38,13 @@ h1 {
    margin: 0 auto;
 }
 
+/* Header */
+header {
+   position: sticky;
+   top: 0;
+   left: 0;
+}
+
 .header-top {
    height: 130px;
    background-color: #120945;
@@ -64,4 +71,11 @@ h1 {
    font-size: 28px;
    font-weight: 600;
    margin-left: 10px;
+}
+
+/* Main */
+
+main {
+   padding: 8px;
+
 }
