@@ -18,7 +18,7 @@ form.addEventListener('submit', function (event) {
     // Prevent the default behavior of the form (submitting the form and reloading the page)
     event.preventDefault();
 
-    // Get the values of the name, price, and gift fields, and store them in variables
+    // Get the values of the name, price, and present fields, and store them in variables
     const name = nameField.value.trim();
     const price = priceField.value.trim();
     const present = presentField.value.trim();
