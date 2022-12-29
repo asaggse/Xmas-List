@@ -43,6 +43,8 @@ function addGift(name, price, gift) {
     console.log(gifts);
 
     calculateTotal();
+
+    renderList();
 }
 
 // Define a function called calculateTotal
