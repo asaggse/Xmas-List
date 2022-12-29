@@ -25,6 +25,13 @@ html {
    font-family: 'Livvic', sans-serif;
 }
 
+h1 {
+   color: #f2ad41;
+   padding: 16px;
+   font-size: 30px;
+   font-weight: 600;
+}
+
 .container {
    max-width: 500px;
    margin: 0 auto;
@@ -33,6 +40,11 @@ html {
 .header-top {
    height: 130px;
    background-color: #120945;
+
+   background-image: url(images/lights.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center bottom;
 }
 
 .header-bottom {
