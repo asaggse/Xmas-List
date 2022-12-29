@@ -75,13 +75,23 @@ function formatAmount(amount) {
     return amount.toFixed(2) + '€';
 }
 
+// Define a function called renderList
 function renderList() {
+    // Clear the inner HTML of the gifts list element
     giftsListElement.innerHTML = '';
 
+    // Loop through the 'gifts' array
     for (let i = 0; i < gifts.length; i++) {
+        // Call the createListElement function, passing in the index of the current gift, and store the result in a variable
         const giftElement = createListElement(i);
+        // Add the gift element to the inner HTML of the gifts list element
         giftsListElement.innerHTML += giftElement;
     }
 
+    // Call the setDeleteButtons function to add delete buttons to the gift list elements
     setDeleteButtons();
+}
+
+function createListElement(i) {
+    
 }
