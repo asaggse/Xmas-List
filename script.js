@@ -106,7 +106,7 @@ function createListElement(i) {
             <p>${gift.present}</p>
         </div>
         <div class="gift-price">${formatAmount(gift.price)}</div>
-        <button class="gift-button" data-index="${i}>❌</button>
+        <button class="gift-button" data-index="${i}">❌</button>
     </li>
     `;
 }
