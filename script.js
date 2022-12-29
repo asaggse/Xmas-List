@@ -37,5 +37,14 @@ function addGift(name, price, gift) {
         name,
         price: Number(price),
         gift
-      };
+    };
+
+    gifts.push(newGift);
+    console.log(gifts);
+
+    calculateTotal();
 }
+
+function calculateTotal() {
+    
+}    
