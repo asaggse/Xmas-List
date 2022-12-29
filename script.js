@@ -32,3 +32,10 @@ form.addEventListener('submit', function (event) {
 });
 
 // FUNCTIONS
+function addGift(name, price, gift) {
+    const newGift = {
+        name,
+        price: Number(price),
+        gift
+      };
+}
