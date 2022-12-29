@@ -19,3 +19,24 @@
    padding: 0;
    box-sizing: border-box;
 }
+
+html {
+   background-color: #f4f5f0;
+   font-family: 'Livvic', sans-serif;
+}
+
+.container {
+   max-width: 500px;
+   margin: 0 auto;
+}
+
+.header-top {
+   height: 130px;
+   background-color: #120945;
+}
+
+.header-bottom {
+   height: 50px;
+   background-color: #4b61d1;
+   border-radius: 0 0 15px 15px;
+}
