@@ -111,6 +111,7 @@ main {
 #gift-form {
    background-color: #ff69b4;
    border-radius: 8px;
+   display: flex;
 }
 
 .form-fields {
@@ -136,4 +137,12 @@ input {
 
 #price-field {
    width: 30%
+}
+
+.form-button {
+   border: none;
+   background-color: transparent;
+   color: #f4f5f0;
+   font-size: 30px;
+   padding-right: 8px;
 }
