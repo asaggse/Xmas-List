@@ -1,0 +1,21 @@
+/*
+    Colors:
+    blue: #4b61d1;
+    dark blue: #120945;
+    gray: #d4d7f5;
+    green: #008c45;
+    pink: #ff69b4;
+    yellow: #f2ad41;
+    white: #f4f5f0;
+*/
+
+/*
+    Font: 'Livvic', sans-serif;
+*/
+
+/* CSS Reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
