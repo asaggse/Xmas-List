@@ -45,12 +45,23 @@ function addGift(name, price, gift) {
     calculateTotal();
 }
 
+// Define a function called calculateTotal
 function calculateTotal() {
+    // Initialize a variable called 'total' to 0
     let total = 0;
 
+    // Loop through the 'gifts' array
     for (let i = 0; i < gifts.length; i++) {
+        // Add the price of the current gift to the 'total' variable
         total += gifts[i].price;
     }
 
+    // Set the inner text of the total slot element to the formatted value of the 'total' variable
     totalSlot.innerText = formatAmount(total);
-}    
+}
+
+// Define a function called formatAmount
+function formatAmount(amount) {
+    // Return the value of 'amount' formatted to two decimal places, followed by the euro symbol
+    return amount.toFixed(2) + '€';
+}
