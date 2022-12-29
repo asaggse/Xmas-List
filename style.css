@@ -21,7 +21,7 @@
 }
 
 html {
-   background-color: #f4f5f0;
+   background-color: #d4d7f5;
    font-family: 'Livvic', sans-serif;
 }
 
@@ -77,5 +77,29 @@ header {
 
 main {
    padding: 8px;
+}
 
+/* Gift list */
+
+.gift {
+   border: 4px solid #f4f5f0;
+   border-radius: 8px;
+   display: flex;
+}
+
+.gift-info {
+   width: 70%;
+   padding: 8px;
+}
+
+.gift-price {
+   width: 20%;
+   padding: 8px;
+   font-weight: 700;
+}
+
+.gift-button {
+   width: 10%;
+   border: none;
+   background-color: #f4f5f0;
 }
