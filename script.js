@@ -32,18 +32,25 @@ form.addEventListener('submit', function (event) {
 });
 
 // FUNCTIONS
+// Define a function called addGift
 function addGift(name, price, gift) {
+    // Create a new object called 'newGift' with the properties 'name', 'price', and 'gift'
     const newGift = {
         name,
-        price: Number(price),
+        price: Number(price),   // Convert the value of 'price' to a number
         gift
     };
 
+    // Add the new gift to the 'gifts' array
     gifts.push(newGift);
+
+    // Log the 'gifts' array to the console
     console.log(gifts);
 
+    // Call the calculateTotal function to update the total
     calculateTotal();
 
+    // Call the renderList function to update the gift list
     renderList();
 }
 
