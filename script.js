@@ -27,3 +27,5 @@ form.addEventListener('submit', function (event) {
     form.reset();
     nameField.focus();
 });
+
+// FUNCTIONS
