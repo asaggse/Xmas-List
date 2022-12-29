@@ -76,5 +76,12 @@ function formatAmount(amount) {
 }
 
 function renderList() {
-    
+    giftsListElement.innerHTML = '';
+
+    for (let i = 0; i < gifts.length; i++) {
+        const giftElement = createListElement(i);
+        giftsListElement.innerHTML += giftElement;
+    }
+
+    setDeleteButtons();
 }
