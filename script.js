@@ -1,12 +1,15 @@
 // PRELIMINARY OPERATIONS
+// Select the total slot element and the gifts list element from the DOM
 const totalSlot = document.querySelector('.total-slot');
 const giftsListElement = document.querySelector('.gifts-list');
 
+// Select the form element, as well as the name, price, and gift field elements
 const form = document.querySelector('#gift-form');
 const nameField = document.querySelector('#name-field');
 const priceField = document.querySelector('#price-field');
 const giftField = document.querySelector('#gift-field');
 
+// Initialize an empty array to store the gifts
 let gifts = [];
 
 // DYNAMIC EVENTS
