@@ -109,5 +109,29 @@ main {
 /* Form */
 
 #gift-form {
-   
+   background-color: #ff69b4;
+   border-radius: 8px;
+}
+
+.form-fields {
+   padding: 8px;
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 8px;
+}
+
+input {
+   font-size: 16px;
+   padding: 8px;
+   border: none;
+   border-radius: 8px;
+   width: 100%;
+}
+
+#name-field {
+   width: 70%;
+}
+
+#price-field {
+   width: 30%
 }
