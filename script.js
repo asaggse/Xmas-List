@@ -93,5 +93,16 @@ function renderList() {
 }
 
 function createListElement(i) {
-    
+    const gift = gifts[i];
+
+    return `
+    <li class="gift">
+        <div class="gift-info">
+            <h3>${gift.name}</h3>
+            <p>${gift.gift}</p>
+        </div>
+        <div class="gift-price">${formatAmount(gift.price)}</div>
+        <button class="gift-button" data-index="${i}>❌</button>
+    </li>
+    `;
 }
