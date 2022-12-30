@@ -110,3 +110,7 @@ function createListElement(i) {
     </li>
     `;
 }
+
+function setDeleteButtons() {
+    
+}
