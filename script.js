@@ -131,3 +131,18 @@ function setDeleteButtons() {
         });
     }
 }
+
+// Define a function called removeGift
+function removeGift(index) {
+    // Remove the gift at the specified index from the 'gifts' array
+    gifts.splice(index, 1);
+
+    // Store the updated 'gifts' array in local storage
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(gifts));
+
+    // Call the calculateTotal function to update the total
+    calculateTotal();
+
+    // Call the renderList function to update the gift list
+    renderList();
+}
