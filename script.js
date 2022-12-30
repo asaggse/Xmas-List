@@ -111,15 +111,22 @@ function createListElement(i) {
     `;
 }
 
+// Define a function called setDeleteButtons
 function setDeleteButtons() {
+    // Get all the gift buttons in the page
     const deleteButtons = document.querySelectorAll('.gift-button');
 
-    for(let i = 0; i < deleteButtons.length; i++) {
+    // Loop through the gift buttons
+    for (let i = 0; i < deleteButtons.length; i++) {
+        // Get the current gift button
         const button = deleteButtons[i];
 
-        button.addEventListener('click', function(){
+        // Add an event listener to the button that listens for the 'click' event
+        button.addEventListener('click', function () {
+            // Get the index of the gift to delete from the data attribute of the button
             const index = button.dataset.index;
 
+            // Call the removeGift function, passing in the index of the gift to delete
             removeGift(index);
         });
     }
