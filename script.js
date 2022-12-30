@@ -1,4 +1,7 @@
 // PRELIMINARY OPERATIONS
+// Define a constant called STORAGE_KEY
+const STORAGE_KEY = '__bool-xmas-list__';
+
 // Select the total slot element and the gifts list element from the DOM
 const totalSlot = document.querySelector('.total-slot');
 const giftsListElement = document.querySelector('.gifts-list');
@@ -11,6 +14,21 @@ const presentField = document.querySelector('#present-field');
 
 // Initialize an empty array to store the gifts
 let gifts = [];
+
+// Get the previous gift list from local storage, if it exists
+const prevList = localStorage.getItem(STORAGE_KEY);
+
+// If the previous list exists
+if (prevList) {
+    // Parse the previous list from a string to an array
+    gifts = JSON.parse(prevList);
+
+    // Call the calculateTotal function to update the total
+    calculateTotal();
+
+    // Call the renderList function to update the gift list
+    renderList();
+}
 
 // DYNAMIC EVENTS
 // Add an event listener to the form element that listens for the 'submit' event
@@ -46,6 +64,9 @@ function addGift(name, price, present) {
 
     // Log the 'gifts' array to the console
     console.log(gifts);
+
+    // Store the updated 'gifts' array in local storage
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(gifts));
 
     // Call the calculateTotal function to update the total
     calculateTotal();
