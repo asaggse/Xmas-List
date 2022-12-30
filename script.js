@@ -112,5 +112,5 @@ function createListElement(i) {
 }
 
 function setDeleteButtons() {
-    
+    const deleteButtons = document.querySelectorAll('.gift-button');
 }
