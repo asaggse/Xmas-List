@@ -113,4 +113,14 @@ function createListElement(i) {
 
 function setDeleteButtons() {
     const deleteButtons = document.querySelectorAll('.gift-button');
+
+    for(let i = 0; i < deleteButtons.length; i++) {
+        const button = deleteButtons[i];
+
+        button.addEventListener('click', function(){
+            const index = button.dataset.index;
+
+            removeGift(index);
+        });
+    }
 }
